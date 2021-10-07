@@ -28,5 +28,5 @@ const sobrenome = 'Soares'
 
 console.log('Meu nome é ' + nome + ' ' + sobrenome)
 console.log(`Meu nome é ${nome} ${sobrenome}`)
-console.log(`Meu nome é ${nome.toUpperCase()} ${sobrenome.toUpperCase()}`)
-console.log(`Meu nome é ${nome.toLowerCase()} ${sobrenome.toLowerCase()}`)
+console.log(`Meu nome é ${nome.toUpperCase()} ${sobrenome.toUpperCase()}`) //Nesse caso o comando .touppercase() faz com que todas as letras da string fiquem em maiúsculo
+console.log(`Meu nome é ${nome.toLowerCase()} ${sobrenome.toLowerCase()}`) //Nesse caso o comando .tolowercase() faz com que todas as letras da string fiquem em minúsculo
