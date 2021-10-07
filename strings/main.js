@@ -30,3 +30,17 @@ console.log('Meu nome é ' + nome + ' ' + sobrenome)
 console.log(`Meu nome é ${nome} ${sobrenome}`)
 console.log(`Meu nome é ${nome.toUpperCase()} ${sobrenome.toUpperCase()}`) //Nesse caso o comando .touppercase() faz com que todas as letras da string fiquem em maiúsculo
 console.log(`Meu nome é ${nome.toLowerCase()} ${sobrenome.toLowerCase()}`) //Nesse caso o comando .tolowercase() faz com que todas as letras da string fiquem em minúsculo
+
+
+
+// ============== Separar listas de Strings ==============
+
+
+const names = 'gabriel,mateus,davi' // Essa variável forma uma lista de três strings
+
+// Para separar as strings, devemos usar o comando .split
+
+console.log(names.split("")) // Ao deixar o comando vazio, a string será separada por cada caracter
+console.log(names.split(",")) // Ao botar a vírgula, ou qualquer outro caracter que apareça na string, o comando vai separar a string onde a esta aparece
+console.log(names.split("a")) // Por exemplo, nesse caso, a separação ocorrerá onde a letra "a" aparecer
+
