@@ -27,3 +27,6 @@ const sobrenome = 'Soares'
 // como por exemplo:
 
 console.log('Meu nome é ' + nome + ' ' + sobrenome)
+console.log(`Meu nome é ${nome} ${sobrenome}`)
+console.log(`Meu nome é ${nome.toUpperCase()} ${sobrenome.toUpperCase()}`)
+console.log(`Meu nome é ${nome.toLowerCase()} ${sobrenome.toLowerCase()}`)
