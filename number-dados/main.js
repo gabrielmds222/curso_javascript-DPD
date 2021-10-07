@@ -27,3 +27,6 @@ console.log(typeof num) // Nesse caso o resultado será que num é um number
 console.log(typeof num.toString()) // Aqui, ao adicionar o .toString, o resultado será que num é uma string
 
 
+// =============== BOOLEANS ===============
+
+
