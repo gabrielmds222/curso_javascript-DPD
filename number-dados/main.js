@@ -45,3 +45,8 @@ const x = null
 
 
 // =============== UNDEFINED ===============
+
+// O undefined é utilizado em variáveis cujo valor ainda não está definido no
+// momento em que ela foi declarada, por exemplo:
+
+const y = undefined
