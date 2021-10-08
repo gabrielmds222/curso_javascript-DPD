@@ -91,3 +91,6 @@ nomes[2] = "Pedro" // Na lista original, o elemento 2 corresponde ao nome "Jorge
 // ["Gabriel", "Fernanda", "Pedro", "Paulo"]
 
 console.log(nomes)
+
+
+// ================== VERIFICAR ÍNDICES ==================
