@@ -21,15 +21,73 @@ const fernanda = nomes[1] // Ou seja, nesse caso, a variável vai acessar o elem
 
 console.log(fernanda)
 
+
+
 // ================== ADICIONAR ELEMENTOS ==================
+
+                // ======== PUSH ========
+
+// O .push adiciona um elemento no fim da lista
+
+nomes.push("Davi")
+
+// Nesse caso a lista nomes vai ficar:
+
+console.log(nomes)
+
+// const nomes = ["Gabriel", "Fernanda", "Jorge", "Paulo", "Davi"]
+
+
+                // ======== UNSHIFT ========
+
+// O .unshift adiciona um elemento no inicio da lista
+
+nomes.unshift("Davi")
+
+// Nesse caso a lista nomes vai ficar:
+
+console.log(nomes)
+
+// const nomes = ["Davi", "Gabriel", "Fernanda", "Jorge", "Paulo"]
+
+
+
 // ================== REMOVER ELEMENTOS ==================
+                
+                // ======== POP ========
+
+// O .pop, ao contrário do push remove o último elemento da lista
+
+nomes.pop()
+
+// Nesse caso a lista nomes vai ficar:
+
+console.log(nomes)
+
+// const nomes = ["Gabriel", "Fernanda", "Jorge"] 
 
 
-// add:
-// .push, .unshift,
+                // ======== SHIFT ========
 
-// remove:
-// .pop
+// já o  .shift remove o primeiro elemento da lista
 
-// alterar:
-// 
+nomes.shift()
+
+// Nesse caso a lista nomes vai ficar:
+
+console.log(nomes)
+
+// const nomes = ["Fernanda", "Jorge", "Paulo"]
+
+
+
+// ================== ALTERAR ELEMENTOS ==================
+
+// É possível alterar um elemento de uma lista da seguinte forma
+
+nomes[2] = "Pedro" // Na lista original, o elemento 2 corresponde ao nome "Jorge", mas aqui o valor será mudado para "Pedro"
+
+// Dando um console.log, a nova lista vai ficar:
+// ["Gabriel", "Fernanda", "Pedro", "Paulo"]
+
+console.log(nomes)
