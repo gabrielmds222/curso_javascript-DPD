@@ -94,3 +94,39 @@ console.log(nomes)
 
 
 // ================== VERIFICAR ÍNDICES ==================
+
+                // ======== INDEXOF ========
+
+// Utilizando o método .indexOf, é possível verificar o índice de um elemento de uma lista
+
+console.log(nomes.indexOf('Fernanda')) // O resultado que aparecerá no navegador é o número 1, que corresponde ao índice de "Fernanda" na lista
+
+
+                // ======== SORT ========
+
+// O método .sort tem como função, ordenar em ordem alfabética, os elementos de uma lista
+
+const sortednames = nomes.sort();
+
+// Com isso, a lista irá aparecer da seguinte forma:
+
+console.log(sortednames)
+
+// ['Fernanda', 'Gabriel', 'Paulo', 'Pedro']
+
+
+                // ======== ARRAY.isARRAY ========
+
+// Para verificar se uma variável é uma lista ou não, podemos usar o método Array.isArray
+
+const namesIsArray = Array.isArray(nomes) // Se a variável colocada dentro do parentêses corresponder a uma lista, então o resultado será true
+
+console.log(namesIsArray)
+
+
+                // ============== length ============== OBS: ESSE MÉTODO JÁ FOI MOSTRADO NO ARQUIVO SOBRE STRINGS
+
+
+// O comando .length mostra a quantidade de caracteres de uma string incluido os espaços
+
+console.log(nomes.length) // O comando console.log, mostra o resultado do código no navegador
