@@ -29,4 +29,19 @@ console.log(typeof num.toString()) // Aqui, ao adicionar o .toString, o resultad
 
 // =============== BOOLEANS ===============
 
+// Correspondem a um tipo de dado que tem valor true ou false
 
+console.log( 2 == 2) // Nesse caso o valor será true
+console.log( 2 == 3) // Nesse caso o valor será false
+
+
+
+// =============== NULL ===============
+
+// O valor null é um literal em JavaScript que representa um valor nulo ou "vazio"
+// Por exemplo:
+
+const x = null
+
+
+// =============== UNDEFINED ===============
