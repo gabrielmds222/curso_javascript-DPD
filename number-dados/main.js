@@ -41,7 +41,7 @@ console.log( 2 == 3) // Nesse caso o valor será false
 // O valor null é um literal em JavaScript que representa um valor nulo ou "vazio"
 // Por exemplo:
 
-const x = null
+const x = null;
 
 
 // =============== UNDEFINED ===============
@@ -49,4 +49,4 @@ const x = null
 // O undefined é utilizado em variáveis cujo valor ainda não está definido no
 // momento em que ela foi declarada, por exemplo:
 
-const y = undefined
+const y = undefined;
