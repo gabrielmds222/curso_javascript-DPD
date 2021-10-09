@@ -169,3 +169,13 @@ console.log(imparAges)
 
                 // ======== .REDUCE ========
 
+// O comando .reduce pega uma lista como parâmetro e executa uma função para unir todos os elementos da lista em um só
+// Por exemplo:
+
+const idades2 = [20, 5, 10, 14, 19, 25] // Vamos utilizar os mesmos valores da lista de exemplo da função .filter e, nosso objetivo é somar os elementos da lista
+
+const sumElements = idades2.reduce(function(ages, accumulator) { // Nesse método, utilizamos um segundo parâmetro dentro da função, o "accumulator", que corresponde ao valor acumulado dos elementos da lista
+    return accumulator + ages
+}, 0); // O 0 é o valor inicial do "accumulator", antes da função executar no primeiro elemento
+
+console.log(sumElements)
