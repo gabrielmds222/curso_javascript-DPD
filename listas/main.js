@@ -164,4 +164,8 @@ const imparAges = idades.filter(function(age) {
 console.log(imparAges)
 
 // A nova lista ficará [5, 19, 25]
-// ======== .MAP ========
+
+
+
+                // ======== .REDUCE ========
+
