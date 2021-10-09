@@ -130,3 +130,38 @@ console.log(namesIsArray)
 // O comando .length mostra a quantidade de caracteres de uma string incluido os espaços
 
 console.log(nomes.length) // O comando console.log, mostra o resultado do código no navegador
+
+
+
+// ================== MÉTODOS AVANÇADOS ==================
+
+                // ======== .MAP ======== 
+
+// O comando .map pega uma lista como parâmetro e executa uma ação em cada elemento da lista
+
+const numbers = [1, 2, 3, 4, 5] // Essa será a lista de exemplo e, o objetivo é multiplicar todos os elementos por 2
+
+const multipliedNumbers = numbers.map(function(num) { // Aqui abrimos uma função dentro do map e vamos passar o que a função deve fazer
+    return num * 2; // O num vai representar cada elemento individualmente da lista que vai ser mudado
+});
+
+console.log(multipliedNumbers);
+
+// A nova lista ficará [2, 4, 6, 8, 10]
+
+
+
+                // ======== .FILTER ========
+
+// O comando .filter pega uma lista como parâmetro e separa somente os elementos da lista que estiverem de acordo com as condições da função
+
+const idades = [20, 5, 10, 14, 19, 25]  // Essa será a lista de exemplo e, o que queremos é pegar apenas as idades ímpares
+
+const imparAges = idades.filter(function(age) {
+    return age % 2 !== 0; // O age representa os elementos que serão verificados um por um e, separados apenas os ímpares
+});
+
+console.log(imparAges)
+
+// A nova lista ficará [5, 19, 25]
+// ======== .MAP ========
