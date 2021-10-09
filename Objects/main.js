@@ -25,3 +25,53 @@ console.log(firstName)
 console.log(lastName)
 console.log(age)
 console.log(hobbies)
+
+
+
+// ============= ADICIONANDO OBJETOS DENTRO DE OBJETOS =============
+
+// Vamos aprender agora formas de adicionar novos objetos dentro de um objeto
+// Utilizaremos esse exemplo:
+
+const person2 = {
+    name:  "Fernanda",
+    idade: 20,
+    passsatempo: ['Estudar', 'Assistir', 'Conversar'],
+    pet: {       // A primeira forma de adicionar um objeto novo a um já existente é dessa forma, assim a propriedade pet carrega outras propriedades
+        type: "dog",
+        name: "Max",
+        idade: 8,
+    },
+};
+
+
+// A OUTRA FORMA DE ADICIONAR UM OBJETO É A SEGUINTE:
+
+// person2.pet = "Max"
+
+// console.log(person2)
+
+
+// ============= DESTRUCTURING EM NOVOS OBJETOS =============
+
+// Para usar o destructuring no exemplo acima em que há um objeto dentro de outro, é necessário seguir a seguinte estrutura
+
+// const {name: primeironome, } // É possível dar um nome especial a uma propriedade de objeto dessa forma
+
+const {
+    name,
+    idade,
+    passsatempo,
+    pet: {type, name: petName, idade: petAge}, // No caso desse objeto dentro de outro, deve-se fazer um destructuring dentro de outro
+  } = person2;
+
+  console.log(name);
+  console.log(idade);
+  console.log(passsatempo);
+  console.log(type);
+  console.log(petName);
+  console.log(petAge);
+
+
+
+// ============= LISTA COM VÁRIOS OBJETOS =============
