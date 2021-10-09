@@ -75,3 +75,30 @@ const {
 
 
 // ============= LISTA COM VÁRIOS OBJETOS =============
+
+// Nesse  caso é preciso unir a estrutura de duas coisas que já aprendemos, as listas e os objetos, como no exemplo abaixo:
+
+const tasks = [
+    {
+      id: 1,
+      description: "Estudar programação",
+      isCompleted: false,
+    },
+    {
+      id: 2,
+      description: "Ler",
+      isCompleted: true,
+    },
+    {
+      id: 3,
+      description: "Treinar",
+      isCompleted: true,
+    },
+  ];
+
+// Agora vamos tentar acessar uma propriedade dessa lista, por exemplo, a descrição do segundo objeto
+// Para isso faríamos da seguinte forma
+
+const secondObj = tasks[1].description // O [1] é para identificar que é a propriedade do elemento de índice 1 da lista
+
+console.log(secondObj)
