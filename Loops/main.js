@@ -41,3 +41,20 @@ for (let i = 0; i < fruits.length; i++) { // Nesse exemplo foi usada a variável
 for (let i of fruits) { // Dessa forma, dizemos que enquanto o 'i' estiver dentro da lista, 
     console.log(i)      // Deve-se exibir o valor de 'i'
 }
+
+
+                // ======== FOR EACH ========
+
+// Outra forma é com o método forEach que executa uma função callback para cada elemento de uma lista
+
+fruits.forEach(function(fruta) { // Ou seja, para cada elemento da lista ela vai executar a função.
+    console.log(fruta);
+}) 
+
+
+// Com esse método também é possível imprimir os índices de cada elemento
+
+fruits.forEach(function(fruta, index) { // Além de pedir a função que imprime cada fruta, também pede os índices
+    console.log(index);
+    console.log(fruta);
+})
