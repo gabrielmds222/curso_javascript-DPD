@@ -57,3 +57,26 @@ if (sum1 === 4 && sum2 === 6) {  // O operador &&, analisa as todas as condiçõ
 if (sum1 === 4 || sum2 === 6) { // O operador ||, analisa as todas as condições entre parênteses e executa o código quando pelo menos uma for verdadeira
   console.log("sum1 is 4 or sum2 is 6!");
 }
+
+
+
+// =============== THERNARY OPERATOR ===============
+
+// Com esse operador, podemos utilizar uma estrutura condicional de uma forma simplificada, com três operadores.
+
+const test = 2 + 1;
+
+// if (test === 3) {
+//   number = 2;
+// } else {
+//   number = 4;
+// }
+
+// Mesma coisa que acima
+let number = test === 3 ? 2 : 4;
+
+// Após a igualdade, o primeiro número significa a condição, ou seja, test === 3?
+// A interrogação é para o caso de ser verdadeiro e, o número após ela, é o valor que a variável number vai assumir.
+// Os dois pontos são para o caso de ser falso e, o número após eles, é o valor que a variável number vai assumir, caso seja falso.
+
+console.log(number);
