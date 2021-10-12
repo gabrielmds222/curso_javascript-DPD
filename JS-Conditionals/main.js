@@ -80,3 +80,23 @@ let number = test === 3 ? 2 : 4;
 // Os dois pontos são para o caso de ser falso e, o número após eles, é o valor que a variável number vai assumir, caso seja falso.
 
 console.log(number);
+
+
+
+// =============== SWITCH ===============
+
+// A estrutura condicional switch permite executar um bloco de código diferente de acordo com cada opção (cada case) especificada.
+
+const fruit = "Banana";
+
+switch (fruit) { // Nesse caso, a função switch vai executar a variável em diversos casos, até achar seu valor.
+  case "maçã":
+    console.log("maçã is red");
+    break; // O break faz com que a função pare de executar ao achar o valor correto. Se o valor não for esse, executará para o próximo
+  case "Uva":
+    console.log("Uva is Purple");
+    break;
+  case "Banana":
+    console.log("Banana is yellow");
+    break;
+}
