@@ -72,3 +72,20 @@ fruits.forEach(function(fruta, index) { // Além de pedir a função que imprime
     console.log(index);
     console.log(fruta);
 })
+
+
+                // ======== FOR IN ========
+
+// Essa forma de usar o for é mais utilizada para repetições com objetos.
+// Por exemplo:
+
+const person = {
+    name: "Jane",
+    age: 21,
+    pet: "Dog"
+  };
+  
+  for (property in person) {  // Nessa condição, a 'property' vai percorrer o objeto e mostrar todos os dados em ordem
+    console.log(property); // Nesse primeiro caso, será mostrado apenas as propriedades como 'name', 'age', por exemplo.
+    console.log(person[property]); // Já aqui, serão mostrado os dados como, 'jane', '21'.
+  }
