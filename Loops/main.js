@@ -1,10 +1,24 @@
-// O loop de programação é como fazer a mesma coisa repetidas vezes.
+// O loop de programação é como fazer a mesma coisa repetidas vezes. Existem duas principais formas de se criar um loop, o while e o for.
+
+
+// ==================== WHILE ====================
+
+// Um loop com while executa um código enquanto uma condição for verdadeira. É melhor utilizado em loops que não se sabe a quantidade de repetições
+
+
+let contador = 0;  // Declaramos uma variável
+
+while (contador < 10) { // Adiciona uma condição, nesse caso, enquanto o valor da variável for menor do que 10
+  console.log("contador é menor do que 10!"); // Enquanto a condição for verdadeira, deve-se imprimir a mensagem.
+  contador += 1
+}
 
 
 // ==================== FOR ====================
 
 // A instrução for cria um loop que consiste em três expressões opcionais, dentro de parênteses e separadas por ponto e vírgula,
 //  seguidas por uma declaração ou uma sequência de declarações executadas em sequência.
+// O for é melhor utilizado quando já se sabe a quantidade de repetições.
 
 for (let cont = 0; cont < 10; cont ++) { // A primeira expressão do for declara uma variável com um valor inicial que nesse caso é 0
     console.log(cont);               // A segunda expressão indica o fim do íntervalo, nesse caso o intervalo é de 0 à 9
