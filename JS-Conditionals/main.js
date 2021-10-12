@@ -39,3 +39,21 @@ if (sum === 2) {
 } else {
   console.log("Sum is not 2!");
 }
+
+
+// =============== OPERADORES DO IF/ELSE ===============
+
+// Para testar condições, existem alguns casos em que será preciso o uso dos operadores abaixo.
+// && = AND
+// || = OR
+
+const sum1 = 2 + 2;
+const sum2 = 3 + 10;
+
+if (sum1 === 4 && sum2 === 6) {  // O operador &&, analisa as todas as condições entre parênteses e só executa o código quando as todas forem verdadeiras
+  console.log("sum1 is 4 and sum2 is 6!");
+}
+
+if (sum1 === 4 || sum2 === 6) { // O operador ||, analisa as todas as condições entre parênteses e executa o código quando pelo menos uma for verdadeira
+  console.log("sum1 is 4 or sum2 is 6!");
+}
