@@ -10,6 +10,7 @@
 const submitButton = document.querySelector("#submit-button"); // Primeiro selecionamos o elemento no DOM
 const nameInput = document.querySelector("#name"); // Selecionar input 1
 const emailInput = document.querySelector("#email"); // Selecionar input 2
+const myForm = document.querySelector("#my-form"); // Essa variável vai servir para podermos estilizar nosso formulário
 
 
 submitButton.addEventListener("click", function(event) { // O método "addEventListener", vai ser adicionar o evento e, dentro deles tem dois parâmetros,
@@ -22,6 +23,11 @@ submitButton.addEventListener("click", function(event) { // O método "addEventL
 
     // console.log(nameValue);
     // console.log(emailValue);
+
+    // Para o caso de usuário não preencher algum dos inputs, podemos criar uma mensagem para alertá-lo
+    if (nameValue === "" || emailValue === "") {
+        return alert("Please fill out all the fields!");
+      }
 });
 
 
