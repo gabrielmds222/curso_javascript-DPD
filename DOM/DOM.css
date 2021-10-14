@@ -73,8 +73,7 @@ header {
 }
 
 .error {
-  background: orangered;
-  color: #fff;
+  color: red;
   padding: 5px;
   margin: 5px;
 }
