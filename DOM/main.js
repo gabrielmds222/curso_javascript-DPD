@@ -61,5 +61,11 @@ items.lastElementChild.innerHTML = "<h1>Hello world!</h1>"; // Com o "lastElemen
 
 
 // =============== ESTILIZANDO ELEMENTOS ===============
-// const button = document.querySelector(".btn");
-// button.style.background = "red";
+
+// Também podemos estilizar elementos por meio do javascript, caso for necessário uma mudança de estilização
+
+const button = document.querySelector(".btn"); // Aqui estamos selecionando o botão do formulário
+
+button.style.background = "red"; // E aqui utilizamos o "style" para estilizar algo, nesse caso o "background"
+
+button.style.color = "black"; // Já aqui a mudança será na "color"
