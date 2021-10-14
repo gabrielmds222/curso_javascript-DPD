@@ -12,11 +12,15 @@ const nameInput = document.querySelector("#name"); // Selecionar input 1
 const emailInput = document.querySelector("#email"); // Selecionar input 2
 const myForm = document.querySelector("#my-form"); // Essa variável vai servir para podermos estilizar nosso formulário
 
+const items = document.querySelector(".items"); // Selecionar os items
+
 
 submitButton.addEventListener("click", function(event) { // O método "addEventListener", vai ser adicionar o evento e, dentro deles tem dois parâmetros,
                                     // O "click", que indica que o evento vai acontecer quando o botão for clicado e, a function que vai dizer o que vai contecer a partir do click 
     event.preventDefault(); // O método "preventDefault" vai impedir o comportamento padrão do botão
     // console.log("clicked!"); // Nesse caso vai aparecer essa mensagem
+
+// ============================================================================
 
     const nameValue = nameInput.value; // Nesse caso, essa variável está pegando o "value", ou seja o valor atribuido ao input, que é o que o usuário digitar
     const emailValue = emailInput.value; // Mesma coisa nesse caso
@@ -24,11 +28,26 @@ submitButton.addEventListener("click", function(event) { // O método "addEventL
     // console.log(nameValue);
     // console.log(emailValue);
 
+// ============================================================================
+
     // Para o caso de usuário não preencher algum dos inputs, podemos criar uma mensagem para alertá-lo
     if (nameValue === "" || emailValue === "") {
         return alert("Please fill out all the fields!");
       }
+
+// ============================================================================
+
+    //  E no caso de o usuário preencher os inputs, o formulário mudar de cor
+    myForm.style.background = "green";
+
+// ============================================================================
+
+    // Também podemos mudar o valor dos itens para serem os valores dos inputs dessa forma:
+    items.firstElementChild.textContent = nameValue; // Aqui selecionamos o primeiro item
+    items.children[1].textContent = emailValue; // E aqui o do meio, pois items é uma lista de elementos
 });
+
+
 
 
 nameInput.addEventListener("change", function (event) { // Esse evento utiliza agora o "change", ou seja, o evento ocorrerá a partir de uma mudança no nameInput
