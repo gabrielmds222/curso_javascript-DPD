@@ -20,7 +20,11 @@ submitButton.addEventListener("click", function(event) { // O método "addEventL
     const nameValue = nameInput.value; // Nesse caso, essa variável está pegando o "value", ou seja o valor atribuido ao input, que é o que o usuário digitar
     const emailValue = emailInput.value; // Mesma coisa nesse caso
 
-    console.log(nameValue);
-    console.log(emailValue);
+    // console.log(nameValue);
+    // console.log(emailValue);
 });
 
+
+nameInput.addEventListener("change", function (event) { // Esse evento utiliza agora o "change", ou seja, o evento ocorrerá a partir de uma mudança no nameInput
+    console.log(event.target.value); // O "target", vai pegar o valor di nameInput toda vez que ele for alterado e vai executá-lo
+});
