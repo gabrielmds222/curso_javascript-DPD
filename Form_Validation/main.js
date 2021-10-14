@@ -4,6 +4,8 @@ const submitButton = document.querySelector('#submit-button');
 
 const errorMsg = document.querySelector('.msg');
 
+const items = document.querySelector('.items');
+
 submitButton.addEventListener("click", (event) => {
     event.preventDefault();
 
@@ -15,4 +17,10 @@ submitButton.addEventListener("click", (event) => {
         errorMsg.classList = "error";
         return;
     }
+
+    const li = document.createElement("li");
+    li.classList = "item";
+    li.innerHTML = `Nome: ${nameValue}<br /> Email: ${emailValue}`;
+
+    items.appendChild(li);
 });
