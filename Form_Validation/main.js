@@ -15,7 +15,12 @@ submitButton.addEventListener("click", (event) => {
     if (nameValue === "" || emailValue === "") {
         errorMsg.textContent = "Por favor preencher o campo obrigatório"
         errorMsg.classList = "error";
-        return;
+
+        setTimeout(() => {
+            errorMsg.textContent = "";
+            errorMsg.classList = "";
+          }, 3000);
+          return;
     }
 
     const li = document.createElement("li");
