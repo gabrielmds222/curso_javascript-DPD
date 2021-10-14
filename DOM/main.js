@@ -35,3 +35,31 @@ console.log(allItems2);
 console.log(allItems3);
 
 
+
+// =============== REMOVER ELEMENTOS ===============
+
+// A primeira manipulação que faremos nos elementos é remover um deles, por exemplo
+// Remover algum dos itens da lista de itens
+
+const items = document.querySelector(".items"); // Nesse caso selecionamos com o querySelector e, assim foram selecionador todos os elementos com classe "items"
+
+// items.remove(); // O método remove() vai remover todos os elementos.
+
+// items.firstElementChild.remove(); // Adicionando o firstElementChild, apenas o primeiro elemento será removido
+
+// items.lastElementChild.remove(); // Adicionando o lastElementChild, apenas o ultimo elemento será removido
+
+
+
+// =============== ALTERANDO ELEMENTOS ===============
+
+// Para acessar elementos e alterá-los, utiliza-se o "children"
+
+items.children[0].textContent = "Item Um"; // O "children" vai representar os elementos dentro de "items" e assim pode-se alterá-los
+
+items.lastElementChild.innerHTML = "<h1>Hello world!</h1>"; // Com o "lastElementChild", vai ser selecionado o ultimo elemento "children" e, o "innerHTML", permite alterar o elemento. Até escrevendo um novo html
+
+
+// =============== ESTILIZANDO ELEMENTOS ===============
+// const button = document.querySelector(".btn");
+// button.style.background = "red";
