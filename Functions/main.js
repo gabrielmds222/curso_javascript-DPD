@@ -1,14 +1,4 @@
-function sum(a, b = 10) {
-    return a + b;
-  }
+// ================ FUNCTION ================
 
-  const sumArrow = (a, b = 10) => {
-    return a + b;
-  };
+// Uma função é um procedimento de JavaScript um conjunto de instruções que executa uma tarefa ou calcula um valor.
 
-  // Mesma coisa que acima
-const sumArrow2 = (a, b = 10) => a + b;
-
-const sumValue = sumArrow2(2);
-
-console.log(sumValue);
