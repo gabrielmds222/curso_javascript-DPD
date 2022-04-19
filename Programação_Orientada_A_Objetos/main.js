@@ -7,7 +7,7 @@ class Person { // Aqui começamos criando uma classe Person
         this.lastname = lastname;
     }
 
-    umMetodoQualquer() { // Dentro da classe é possível criar métodos também, esse no caso une os dois parÂmetros da função
+    umMetodoQualquer() { // Dentro da classe é possível criar métodos também, esse no caso une os dois parâmetros da função
         console.log(`${this.name} ${this.lastname}`);
     }
 
